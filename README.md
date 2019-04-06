@@ -9,6 +9,7 @@ A code repository where I record my reflective learnings on the Java programming
 * [Software Design Patterns](./src/main/java/com/flyer/designPatterns)
     * [Behavioral - Strategy](./src/main/java/com/flyer/designPatterns/strateggy)
     * [Creational - Singleton](./src/main/java/com/flyer/designPatterns/singleton)
+* [Functional Programming in Java](./src/main/java/com/flyer/lambdaExpressions)
 
 ## Author
 Ruifeng Ma (mrfflyer@gmail.com)
