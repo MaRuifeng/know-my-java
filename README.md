@@ -11,6 +11,7 @@ A code repository where I record my reflective learnings on the Java programming
     * [Creational - Singleton](./src/main/java/com/flyer/designPatterns/singleton)
 * [Functional Programming in Java](./src/main/java/com/flyer/lambdaExpressions)
 * [Composition vs. Inheritance & Design with Interfaces](./src/main/java/com/flyer/compositionVsInheritance)
+* [Java Generics](./src/main/java/com/flyer/generics)
 
 ## Author
 Ruifeng Ma (mrfflyer@gmail.com)
