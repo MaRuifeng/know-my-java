@@ -4,8 +4,9 @@
 A code repository where I record my reflective learnings on the Java programming language. 
 
 ## List of topics
-
-* [Multi-threading](./src/main/java/com/flyer/multiThread)
+* [Java Concurrency](./src/main/java/com/flyer/concurrency)
+    * [Multi-threading](./src/main/java/com/flyer/concurrency/multiThread)
+    * [Countdown Latch](./src/main/java/com/flyer/concurrency/countdownLatch)
 * [Software Design Patterns](./src/main/java/com/flyer/designPatterns)
     * [Behavioral - Strategy](./src/main/java/com/flyer/designPatterns/strateggy)
     * [Creational - Singleton](./src/main/java/com/flyer/designPatterns/singleton)

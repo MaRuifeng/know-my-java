@@ -1,4 +1,4 @@
-package com.flyer.multiThread;
+package com.flyer.concurrency.multiThread;
 
 public class TestSimpleThread {
 
