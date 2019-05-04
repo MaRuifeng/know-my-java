@@ -8,5 +8,10 @@ public class TestSimpleThread {
 
         SimpleThread threadTwo = new SimpleThread("thread-2");
         threadTwo.start();
+
+        for (int i = 0; i < 3; i++) {
+            SimpleThread thread = new SimpleThread(String.valueOf(i));
+            thread.start();
+        }
     }
 }
