@@ -1,6 +1,9 @@
 package com.flyer.lambdaExpressions;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Record of useful Java 8 functional interface & lambda expression examples
@@ -60,6 +63,13 @@ public class LambdaExpressionExplorer {
         return Arrays.stream(arr).reduce(0, (a, b) -> a + b);
     }
 
+    /**
+     * Convert a list of objects to a map with the object hashcode as the key, and itself as the value.
+     */
+    private static <T> Map<Integer, Object> convertListToMap(List<T> list) {
+        return list.stream().collect(Collectors.toMap(Object::hashCode, object -> object));
+    }
+
     public static void main(String[] args) {
         System.out.println(">>> 1. Simple functional interface instantiation via lambda expression");
         simpleLamda();
@@ -79,6 +89,10 @@ public class LambdaExpressionExplorer {
         int[] arr = new int[10];
         Arrays.fill(arr, 1);
         System.out.println("Sum: " + sumUpViaStreamReduce(arr));
+
+        System.out.println(">>> 4. Convert a list to map");
+        List<String> list = Arrays.asList("A", "B", "C", "D", "E");
+        System.out.println("Map: " + convertListToMap(list));
 
         System.out.println("\nEnd of rabbit hole.");
     }
