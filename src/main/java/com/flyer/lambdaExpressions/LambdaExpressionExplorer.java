@@ -64,10 +64,10 @@ public class LambdaExpressionExplorer {
     }
 
     /**
-     * Convert a list of objects to a map with the object hashcode as the key, and itself as the value.
+     * Convert a list of objects to a map with the object index as the key, and itself as the value.
      */
     private static <T> Map<Integer, Object> convertListToMap(List<T> list) {
-        return list.stream().collect(Collectors.toMap(Object::hashCode, object -> object));
+        return list.stream().collect(Collectors.toMap(list::indexOf, object -> object));
     }
 
     public static void main(String[] args) {
